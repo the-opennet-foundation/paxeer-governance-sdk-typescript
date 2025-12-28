@@ -2,4 +2,4 @@ onlyBuiltDependencies:
   - '@swc/core'
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
-  - paxeer-governance-sdk
+  - '@paxeer-network/paxeer-governance-sdk'

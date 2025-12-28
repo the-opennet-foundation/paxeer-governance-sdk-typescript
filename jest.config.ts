@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^paxeer-governance-sdk$': '<rootDir>/src/index.ts',
-    '^paxeer-governance-sdk/(.*)$': '<rootDir>/src/$1',
+    '^@paxeer-network/paxeer-governance-sdk$': '<rootDir>/src/index.ts',
+    '^@paxeer-network/paxeer-governance-sdk/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',
