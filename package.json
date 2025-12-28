@@ -1,6 +1,6 @@
 {
   "name": "@paxeer-network/paxeer-governance-sdk",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The official TypeScript library for the Paxeer Governance SDK API",
   "author": "Paxeer Governance SDK <>",
   "types": "dist/index.d.ts",
