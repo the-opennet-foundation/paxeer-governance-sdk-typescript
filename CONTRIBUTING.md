@@ -42,14 +42,14 @@ If you’d like to use the repository from source, you can either install from g
 To install via git:
 
 ```sh
-$ npm install git+ssh://git@github.com:stainless-sdks/paxeer-governance-sdk-typescript.git
+$ npm install git+ssh://git@github.com:the-opennet-foundation/paxeer-governance-sdk-typescript.git
 ```
 
 Alternatively, to link a local copy of the repo:
 
 ```sh
 # Clone
-$ git clone https://www.github.com/stainless-sdks/paxeer-governance-sdk-typescript
+$ git clone https://www.github.com/the-opennet-foundation/paxeer-governance-sdk-typescript
 $ cd paxeer-governance-sdk-typescript
 
 # With yarn
