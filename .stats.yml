@@ -1,4 +1,4 @@
 configured_endpoints: 60
 openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/chainflow%2Fpaxeer-governance-sdk-6247ff7e9d4af7926a100c2f3f07fff777a44aeb44f1481c1d5d17de8a2ae41e.yml
 openapi_spec_hash: 1e0fa0b06fa22d23f2aedff256eb136c
-config_hash: 338540d66989af9b7f909050f3bfdfeb
+config_hash: dc50ceb3147861d3645d48b2dc5b8a1d

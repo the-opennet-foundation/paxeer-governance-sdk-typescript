@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "paxeer-governance-sdk/*": ["./src/*"],
-      "paxeer-governance-sdk": ["./src/index.ts"]
+      "@paxeer-network/paxeer-governance-sdk/*": ["./src/*"],
+      "@paxeer-network/paxeer-governance-sdk": ["./src/index.ts"]
     },
     "noEmit": true,
 
