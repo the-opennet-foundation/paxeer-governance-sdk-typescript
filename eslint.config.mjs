@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^paxeer-governance-sdk(/.*)?',
+              regex: '^@paxeer-network/paxeer-governance-sdk(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

@@ -1,5 +1,8 @@
-import { multipartFormRequestOptions, createForm } from 'paxeer-governance-sdk/internal/uploads';
-import { toFile } from 'paxeer-governance-sdk/core/uploads';
+import {
+  multipartFormRequestOptions,
+  createForm,
+} from '@paxeer-network/paxeer-governance-sdk/internal/uploads';
+import { toFile } from '@paxeer-network/paxeer-governance-sdk/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

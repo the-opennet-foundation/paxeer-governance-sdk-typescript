@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { PaxeerGovernanceSDK } from 'paxeer-governance-sdk';
+import { PaxeerGovernanceSDK } from '@paxeer-network/paxeer-governance-sdk';
 
 const { stringifyQuery } = PaxeerGovernanceSDK.prototype as any;
 
