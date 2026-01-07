@@ -47,7 +47,11 @@ describe('resource votes', () => {
     await expect(
       client.proposals.votes.list(
         'proposalId',
-        { limit: 1, offset: 0, support: 0 },
+        {
+          limit: 1,
+          offset: 0,
+          support: 0,
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);

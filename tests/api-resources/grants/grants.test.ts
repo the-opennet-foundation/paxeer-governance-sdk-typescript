@@ -102,7 +102,11 @@ describe('resource grants', () => {
     const responsePromise = client.grants.submit({
       description: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
       milestones: [
-        { amount: '90000000000000000000000000', deadline: '2019-12-27T18:11:19.117Z', title: 'title' },
+        {
+          amount: '90000000000000000000000000',
+          deadline: '2019-12-27T18:11:19.117Z',
+          title: 'title',
+        },
       ],
       requestedAmount: '90000000000000000000000000',
       title: 'xxxxxxxxxx',
