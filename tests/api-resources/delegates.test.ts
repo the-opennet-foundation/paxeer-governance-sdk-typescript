@@ -83,7 +83,14 @@ describe('resource delegates', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.delegates.list(
-        { active: true, limit: 1, offset: 0, search: 'search', sortBy: 'voting_power', sortOrder: 'asc' },
+        {
+          active: true,
+          limit: 1,
+          offset: 0,
+          search: 'search',
+          sortBy: 'voting_power',
+          sortOrder: 'asc',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
