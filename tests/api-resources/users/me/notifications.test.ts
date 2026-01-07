@@ -25,7 +25,11 @@ describe('resource notifications', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.users.me.notifications.list(
-        { limit: 1, offset: 0, unread: true },
+        {
+          limit: 1,
+          offset: 0,
+          unread: true,
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
