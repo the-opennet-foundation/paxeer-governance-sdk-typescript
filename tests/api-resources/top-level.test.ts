@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('top level methods', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveAPIInfo', async () => {
     const responsePromise = client.retrieveAPIInfo();
     const rawResponse = await responsePromise.asResponse();

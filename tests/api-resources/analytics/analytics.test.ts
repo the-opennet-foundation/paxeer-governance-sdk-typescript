@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource analytics', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveDashboard', async () => {
     const responsePromise = client.analytics.retrieveDashboard();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource analytics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveHistory', async () => {
     const responsePromise = client.analytics.retrieveHistory();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource analytics', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveHistory: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -40,7 +40,7 @@ describe('resource analytics', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveParticipation', async () => {
     const responsePromise = client.analytics.retrieveParticipation();
     const rawResponse = await responsePromise.asResponse();

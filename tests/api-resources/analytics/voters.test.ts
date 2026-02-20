@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource voters', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveActivity', async () => {
     const responsePromise = client.analytics.voters.retrieveActivity(
       '0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD',
@@ -22,7 +22,7 @@ describe('resource voters', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveTop', async () => {
     const responsePromise = client.analytics.voters.retrieveTop();
     const rawResponse = await responsePromise.asResponse();
@@ -34,7 +34,7 @@ describe('resource voters', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveTop: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

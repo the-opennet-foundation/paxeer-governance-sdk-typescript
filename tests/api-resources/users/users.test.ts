@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource users', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getProfile', async () => {
     const responsePromise = client.users.getProfile('0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource users', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('updateProfile', async () => {
     const responsePromise = client.users.updateProfile('0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD', {});
     const rawResponse = await responsePromise.asResponse();

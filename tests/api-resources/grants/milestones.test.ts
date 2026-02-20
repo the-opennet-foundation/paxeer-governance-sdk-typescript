@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource milestones', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.grants.milestones.list(0);
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource milestones', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submit: only required params', async () => {
     const responsePromise = client.grants.milestones.submit(0, { grantId: 0 });
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource milestones', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submit: required and optional params', async () => {
     const response = await client.grants.milestones.submit(0, {
       grantId: 0,

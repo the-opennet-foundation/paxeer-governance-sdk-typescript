@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource auth', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getNonce', async () => {
     const responsePromise = client.users.auth.getNonce();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource auth', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('login: only required params', async () => {
     const responsePromise = client.users.auth.login({
       address: '0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD',
@@ -37,7 +37,7 @@ describe('resource auth', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('login: required and optional params', async () => {
     const response = await client.users.auth.login({
       address: '0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD',

@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource balance', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.treasury.balance.retrieve();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource balance', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveByToken', async () => {
     const responsePromise = client.treasury.balance.retrieveByToken(
       '0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD',
