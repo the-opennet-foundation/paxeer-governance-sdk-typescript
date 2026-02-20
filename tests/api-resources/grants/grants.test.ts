@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource grants', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.grants.retrieve(0);
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource grants', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.grants.list();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource grants', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -53,7 +53,7 @@ describe('resource grants', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getByApplicant', async () => {
     const responsePromise = client.grants.getByApplicant('0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD');
     const rawResponse = await responsePromise.asResponse();
@@ -65,7 +65,7 @@ describe('resource grants', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPrograms', async () => {
     const responsePromise = client.grants.getPrograms();
     const rawResponse = await responsePromise.asResponse();
@@ -77,7 +77,7 @@ describe('resource grants', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPrograms: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -85,7 +85,7 @@ describe('resource grants', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStats', async () => {
     const responsePromise = client.grants.getStats();
     const rawResponse = await responsePromise.asResponse();
@@ -97,7 +97,7 @@ describe('resource grants', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submit: only required params', async () => {
     const responsePromise = client.grants.submit({
       description: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
@@ -120,7 +120,7 @@ describe('resource grants', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submit: required and optional params', async () => {
     const response = await client.grants.submit({
       description: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',

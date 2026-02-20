@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource me', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getProfile', async () => {
     const responsePromise = client.users.me.getProfile();
     const rawResponse = await responsePromise.asResponse();

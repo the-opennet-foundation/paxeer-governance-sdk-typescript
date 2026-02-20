@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource notifications', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.users.me.notifications.list();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource notifications', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -35,7 +35,7 @@ describe('resource notifications', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getUnreadCount', async () => {
     const responsePromise = client.users.me.notifications.getUnreadCount();
     const rawResponse = await responsePromise.asResponse();
@@ -47,7 +47,7 @@ describe('resource notifications', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('markAllAsRead', async () => {
     const responsePromise = client.users.me.notifications.markAllAsRead();
     const rawResponse = await responsePromise.asResponse();
@@ -59,7 +59,7 @@ describe('resource notifications', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('markAsRead', async () => {
     const responsePromise = client.users.me.notifications.markAsRead('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e');
     const rawResponse = await responsePromise.asResponse();

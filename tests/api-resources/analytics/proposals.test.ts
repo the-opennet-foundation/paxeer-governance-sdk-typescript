@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource proposals', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveMetrics', async () => {
     const responsePromise = client.analytics.proposals.retrieveMetrics('proposalId');
     const rawResponse = await responsePromise.asResponse();
