@@ -60,7 +60,7 @@ $ yarn link @paxeer-network/paxeer-governance-sdk
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global @paxeer-network/paxeer-governance-sdk
+$ pnpm link --global @paxeer-network/paxeer-governance-sdk
 ```
 
 ## Running tests
