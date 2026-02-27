@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource proposals', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.proposals.retrieve('proposalId');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource proposals', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.proposals.list();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource proposals', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -53,7 +53,7 @@ describe('resource proposals', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAnalytics', async () => {
     const responsePromise = client.proposals.getAnalytics('proposalId');
     const rawResponse = await responsePromise.asResponse();
@@ -65,7 +65,7 @@ describe('resource proposals', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStats', async () => {
     const responsePromise = client.proposals.getStats();
     const rawResponse = await responsePromise.asResponse();
@@ -77,7 +77,7 @@ describe('resource proposals', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listActive', async () => {
     const responsePromise = client.proposals.listActive();
     const rawResponse = await responsePromise.asResponse();
@@ -89,7 +89,7 @@ describe('resource proposals', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listCategories', async () => {
     const responsePromise = client.proposals.listCategories();
     const rawResponse = await responsePromise.asResponse();
@@ -101,7 +101,7 @@ describe('resource proposals', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('sync', async () => {
     const responsePromise = client.proposals.sync('proposalId');
     const rawResponse = await responsePromise.asResponse();
@@ -113,7 +113,7 @@ describe('resource proposals', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('updateFeatured', async () => {
     const responsePromise = client.proposals.updateFeatured('proposalId', {});
     const rawResponse = await responsePromise.asResponse();

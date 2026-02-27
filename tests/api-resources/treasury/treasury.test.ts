@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource treasury', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listBalances', async () => {
     const responsePromise = client.treasury.listBalances();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource treasury', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listBudgets', async () => {
     const responsePromise = client.treasury.listBudgets();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource treasury', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listBudgets: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -40,7 +40,7 @@ describe('resource treasury', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listFlows', async () => {
     const responsePromise = client.treasury.listFlows();
     const rawResponse = await responsePromise.asResponse();
@@ -52,7 +52,7 @@ describe('resource treasury', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listFlows: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -60,7 +60,7 @@ describe('resource treasury', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listRecipients', async () => {
     const responsePromise = client.treasury.listRecipients();
     const rawResponse = await responsePromise.asResponse();
@@ -72,7 +72,7 @@ describe('resource treasury', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listRecipients: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -80,7 +80,7 @@ describe('resource treasury', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTransactions', async () => {
     const responsePromise = client.treasury.listTransactions();
     const rawResponse = await responsePromise.asResponse();
@@ -92,7 +92,7 @@ describe('resource treasury', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTransactions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -113,7 +113,7 @@ describe('resource treasury', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStats', async () => {
     const responsePromise = client.treasury.retrieveStats();
     const rawResponse = await responsePromise.asResponse();

@@ -8,7 +8,7 @@ const client = new PaxeerGovernanceSDK({
 });
 
 describe('resource delegates', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.delegates.create({ name: 'xx' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource delegates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.delegates.create({
       name: 'xx',
@@ -30,7 +30,7 @@ describe('resource delegates', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.delegates.retrieve('0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD');
     const rawResponse = await responsePromise.asResponse();
@@ -42,7 +42,7 @@ describe('resource delegates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.delegates.update('0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD', {
       name: 'xx',
@@ -56,7 +56,7 @@ describe('resource delegates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.delegates.update('0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD', {
       name: 'xx',
@@ -66,7 +66,7 @@ describe('resource delegates', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.delegates.list();
     const rawResponse = await responsePromise.asResponse();
@@ -78,18 +78,25 @@ describe('resource delegates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.delegates.list(
-        { active: true, limit: 1, offset: 0, search: 'search', sortBy: 'voting_power', sortOrder: 'asc' },
+        {
+          active: true,
+          limit: 1,
+          offset: 0,
+          search: 'search',
+          sortBy: 'voting_power',
+          sortOrder: 'asc',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listDelegators', async () => {
     const responsePromise = client.delegates.listDelegators('0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD');
     const rawResponse = await responsePromise.asResponse();
@@ -101,7 +108,7 @@ describe('resource delegates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTop', async () => {
     const responsePromise = client.delegates.listTop();
     const rawResponse = await responsePromise.asResponse();
@@ -113,7 +120,7 @@ describe('resource delegates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTop: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -121,7 +128,7 @@ describe('resource delegates', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listVotes', async () => {
     const responsePromise = client.delegates.listVotes('0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD');
     const rawResponse = await responsePromise.asResponse();
@@ -133,7 +140,7 @@ describe('resource delegates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listVotes: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -145,7 +152,7 @@ describe('resource delegates', () => {
     ).rejects.toThrow(PaxeerGovernanceSDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStats', async () => {
     const responsePromise = client.delegates.retrieveStats();
     const rawResponse = await responsePromise.asResponse();
@@ -157,7 +164,7 @@ describe('resource delegates', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('sync', async () => {
     const responsePromise = client.delegates.sync('0xf09a62DB41F5Aa24D6Cd8aB25cc8c10Cb5C777DD');
     const rawResponse = await responsePromise.asResponse();

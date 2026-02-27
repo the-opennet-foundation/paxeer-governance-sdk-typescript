@@ -76,7 +76,7 @@ export interface MilestoneSubmitParams {
   grantId: number;
 
   /**
-   * Body param:
+   * Body param
    */
   deliverableIpfsHash?: string;
 }
